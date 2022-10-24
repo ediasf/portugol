@@ -2,11 +2,12 @@ programa {
   funcao inicio() {
     real salario, abono, novosalario
     
-    escreva("Digite o valor do Sal·rio: ")
+    escreva("Digite o valor do Sal√°rio: ")
     leia(salario)
     escreva("Digite o valor do Abono: ")
     leia(abono)
     novosalario = salario + abono
-    escreva("O seu novo sal·rio È: " + novosalario)
+    escreva("O seu novo sal√°rio √©: " + novosalario)
   }
 }
+//so um coment√°rio pra fazer o commit no github e fazer o pull no terminal
