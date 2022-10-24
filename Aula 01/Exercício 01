@@ -11,6 +11,7 @@ programa {
     escreva("Digite a nota 04: ")
     leia(nota4)
     media = (nota1 + nota2 + nota3 + nota4) / 4
-    escreva("A sua média foi: " + media)
+    escreva("A sua mÃ©dia foi: " + media)
   }
 }
+//20deoutubro
