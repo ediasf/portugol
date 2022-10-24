@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+    inteiro produto, quantidade
+    escreva ("Digite o código do produto: ")
+    leia (produto)
+    escreva ("Digite a quantidade do produto: ")
+    leia (quantidade)
+    escolha(produto)
+    caso 1:
+    escreva (quantidade, "x Cachorro Quente custa: ", quantidade * 10, , ",00 Reais")
+    pare
+    caso 2:
+    escreva (quantidade, "x X-Salada custa: ", quantidade * 15, , ",00 Reais")
+    pare
+    caso 3:
+    escreva (quantidade, "x X-Bacon custa: ", quantidade * 18, , ",00 Reais")
+    pare
+    caso 4:
+    escreva (quantidade, "x Bauru custa: ", quantidade * 12, ",00 Reais")
+    pare
+    caso 5:
+    escreva (quantidade, "x Refrigerante custa: ", quantidade * 8, ",00 Reais")
+    pare
+    caso 6:
+    escreva (quantidade, "x Suco de Laranja: ", quantidade * 13, ",00 Reais")
+    pare
+    caso contrario 
+      escreva ("Ops! Algo deu errado, verifique se o código do produto está correto.")
+  }
+}

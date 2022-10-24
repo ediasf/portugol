@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+    cadeia classe, reino, alimento
+    escreva ("Digite a classe do animal (Vertebrado ou Invertebrado): ")
+    leia (classe)
+    escreva ("Digite o reino do animal (Ave ou Mamífero ou Inseto ou Anelídio): ")
+    leia (reino)
+    escreva ("Digite o tipo de alimento do animal (Carnívoro ou Onívoro ou Herbívoro ou Hematófago): ")
+    leia (alimento)
+    
+    se (classe == "Vertebrado" e reino == "Ave" e alimento == "Carnívoro")
+    escreva ("Águia")
+    senao se (classe == "Vertebrado" e reino == "Ave" e alimento == "Onívoro")
+    escreva ("Pomba")
+    senao se (classe == "Vertebrado" e reino == "Mamífero" e alimento == "Onívoro")
+    escreva ("Homem")
+    senao se (classe == "Vertebrado" e reino == "Mamífero" e alimento == "Herbívoro")
+    escreva ("Vaca")
+    senao se (classe == "Invertebrado" e reino == "Inseto" e alimento == "Hematófago")
+    escreva ("Pulga")
+    senao se (classe == "Invertebrado" e reino == "Inseto" e alimento == "Herbívoro")
+    escreva ("Lagarta")
+    senao se (classe == "Invertebrado" e reino == "Anelídio" e alimento == "Hematófago")
+    escreva ("Sanguessuga")
+    senao se (classe == "Invertebrado" e reino == "Anelídio" e alimento == "Onívoro")
+    escreva ("Minhoca")
+    senao 
+      escreva ("Ops, algo deu errado!")
+  }
+}
