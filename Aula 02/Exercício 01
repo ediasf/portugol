@@ -3,9 +3,14 @@ programa {
     inteiro numero
   escreva ("Digite um número: ")
   leia (numero)
-  limpa()
-  se (numero % 2 == 0)
-    escreva("O número é par")
-  senao escreva ("O número é ímpar")
+  se (numero % 2 == 0) {
+  se (numero >= 0)
+    escreva("O número é par e positivo")
+  senao escreva ("O número é par e negativo")
+  }senao { escreva ("O número é ímpar") 
+  se (numero >= 0)
+    escreva("O número é impar e positivo")
+  senao escreva ("O número é impar e negativo")
+  } 
   }
 }
