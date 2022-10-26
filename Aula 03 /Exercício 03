@@ -1,44 +1,37 @@
-programa
-{
-	funcao inicio ()
-	{
-		
-		inteiro vetor[10], soma =0, qtdImpar =0, qtdPar = 0
-		real media
-		
-		para(inteiro i =0; i < 10; i++){
-			
-			escreva("\n Informe o ", i+1, "° valor: ")
-			leia(vetor[i])
-			soma += vetor[i]
-			se(vetor[i] % 2 ==0){
-				qtdPar++
-			}senao{
-				qtdImpar++
-			}
+programa {
+	funcao inicio() {
+		inteiro vetor[10], cont, numero, soma = 0
+		cont = 0
+		enquanto(cont < 10){
+		    escreva("Digite o ",cont + 1,"º número inteiro: ")
+		    leia(vetor[cont])
+		    cont++
+		    limpa()
 		}
-		media = soma/10
-		limpa()
-		escreva("\n A soma é: ", soma)
-		escreva("\n A média é: ", media)
-		escreva("\n A quantidade de pares é: ", qtdPar)
-		escreva("\n A quantidade de ímpares é: ", qtdImpar)
+		cont = 0
+		escreva("Elementos nos índices ímpares: ")
+		enquanto(cont < 10){
+		    se(vetor[cont]%2 == 1){
+		        escreva(vetor[cont], " ")
+		    }
+		    cont++
+		}
 		
+		escreva("\nElementos nos índices pares: ")
+		cont = 0
+		enquanto(cont < 10){
+		    se(vetor[cont]%2 == 0){
+		        escreva(vetor[cont], " ")
+		    }
+		    cont++
+		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		cont = 0
+		enquanto(cont < 10){
+		    soma = soma + vetor[cont]
+		    cont++
+		}
+		escreva("\nA soma é: ", soma)
+		escreva("\nA média é: ", (soma/10))
 	}
 }
